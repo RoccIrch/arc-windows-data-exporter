@@ -24,7 +24,7 @@ if /i "%confirmation%" neq "Y" (
 
 del /q "%folder_to_empty%\*"
 
-echo The folder 'Arc' has been successfully emptied.
+echo Last data has been successfully removed.
 
 set "destination_folder=%work_folder%%package_name%\LocalCache\Local\Arc"
 
