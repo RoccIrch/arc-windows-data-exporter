@@ -2,6 +2,8 @@
 
 These scripts provide a convenient way to export and import your spaces, pinned tab and favorite tab from Arc Windows Beta. You can use it to bring your things to another computer or just to make some saves before updating client. 
 
+❗ Caution, this script only enables exporting and importing spaces, pinned tabs, and favorites, you will need to reconnect your accounts!
+
 ## Before using :
 - Ensure that 'tar' is installed on your system.
 - Make sure Arc Browser is closed before proceeding export or import.
