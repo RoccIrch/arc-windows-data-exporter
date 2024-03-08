@@ -31,7 +31,20 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-tar -czvf "%archive_destination%" -C "%arc_data_folder%" .
+tar -czvf "%archive_destination%" -C "%arc_data_folder%" ^
+    ArchiveItemsFaviconCache ^
+    ArchiveSnapshotCache ^
+    BoostsImageCache ^
+    RemoteAssetDirectory ^
+    SidebarItemsFaviconCache ^
+    StorableArchive.json ^
+    StorableArchiveItems.json ^
+    StorableAuthState.json ^
+    StorableCommandBarAdditionalRanking.json ^
+    StorableDefaultBrowserPrompts.json ^
+    StorableFeatureFlags.json ^
+    StorableSidebar.json ^
+    StorableWindows.json || echo Warning: Some files or directories were not found.
 
 echo Archive created successfully at: %archive_destination%
 

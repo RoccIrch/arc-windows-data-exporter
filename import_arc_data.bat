@@ -22,7 +22,11 @@ if /i "%confirmation%" neq "Y" (
     exit /b 0
 )
 
-del /q "%folder_to_empty%\*"
+for /d %%i in ("%folder_to_empty%\*") do (
+    if /i not "%%~nxi"=="User Data" (
+        rmdir /s /q "%%i"
+    )
+)
 
 echo Last data has been successfully removed.
 
